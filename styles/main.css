@@ -1,0 +1,347 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url("../fonts/Avenir.ttc");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: #e5e5e5;
+  margin: 0;
+  font-family: Avenir, sans-serif, Roboto;
+}
+
+.header {
+  margin-bottom: 39px;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 0 #e1e7ed;
+          box-shadow: 0 1px 0 #e1e7ed;
+}
+
+.header .menu {
+  width: 373px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header .menu__links {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d4e61;
+}
+
+.header .menu__links:hover {
+  color: black;
+}
+
+.header__img {
+  height: 464px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form {
+  height: 330px;
+  width: 319px;
+  padding: 30px 30px 38px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #fff;
+  margin-left: 80px;
+}
+
+.form .price {
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
+  margin-bottom: 39px;
+}
+
+.form__inputs {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 16px;
+  border: 1px solid #e1e7ed;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.form__inputs::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
+  border-radius: 2px;
+}
+
+.form__inputs:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
+  border-radius: 2px;
+}
+
+.form__inputs::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
+  border-radius: 2px;
+}
+
+.form__inputs::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  color: #3d4e61;
+  border-radius: 2px;
+}
+
+.form__button {
+  background: #fd5c63;
+  border-radius: 4px;
+  height: 50px;
+  width: 270px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  border: none;
+}
+
+.content {
+  width: 491px;
+}
+
+.content__heading {
+  font-size: 36px;
+  line-height: 42px;
+  color: #3d4e61;
+  margin-top: 0;
+}
+
+.content__subheading {
+  font-size: 16px;
+  line-height: 19px;
+  color: #687c94;
+}
+
+.content__detailes {
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d4e61;
+}
+
+.content__description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #3d4e61;
+}
+
+.content__contact > a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: bold;
+  color: #3d4e61;
+}
+
+.content__amenities {
+  font-size: 20px;
+  line-height: 23px;
+  color: #3d4e61;
+  font-weight: bold;
+  margin-top: 45px;
+}
+
+.content__amenities_details {
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d4e61;
+}
+
+.content__amenities_link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d4e61;
+  margin-bottom: 66px;
+}
+
+.content__reviews {
+  font-size: 28px;
+  line-height: 33px;
+  color: #3d4e61;
+  font-weight: bold;
+  margin-top: 66px;
+}
+
+.content .person {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 164px;
+      grid-template-columns: 50px 164px;
+  grid-gap: 21px;
+}
+
+.content .person__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #c4c4c4;
+}
+
+.content .person .name {
+  font-size: 20px;
+  line-height: 27px;
+  color: #3d4e61;
+  font-weight: bold;
+}
+
+.content .person .date {
+  font-size: 14px;
+  line-height: 16px;
+  color: #3d4e61;
+}
+
+.content > p {
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d4e61;
+}
+
+.content .host {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  color: #3d4e61;
+  margin-top: 66px;
+}
+
+.content .host_adress {
+  font-size: 14px;
+  line-height: 16px;
+  color: #3d4e61;
+}
+
+.content .host_info {
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d4e61;
+}
+
+.content .host_contact {
+  border: 1px solid #118488;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #118488;
+  height: 50px;
+  width: 150px;
+  margin-bottom: 75px;
+}
+
+.footer {
+  background-color: #fff;
+  -webkit-box-shadow: 0 -1px 0 #e1e7ed;
+          box-shadow: 0 -1px 0 #e1e7ed;
+  padding: 43px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__nav {
+  width: 840px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__menu {
+  list-style-type: none;
+}
+
+.footer__menu__items:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__menu__items:first-child {
+  margin-bottom: 20px;
+}
+
+.footer__menu__links {
+  text-decoration: none;
+  color: #3d4e61;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.footer__menu__links_1 {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 906px) {
+  .form {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
