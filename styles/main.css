@@ -357,7 +357,19 @@ body {
         -ms-flex-order: 1;
             order: 1;
     margin: 0 0 50px;
-    position: static;
+    padding: 0;
+    height: 100%;
+    top: 0;
+  }
+  .form .price {
+    margin-bottom: 5px;
+  }
+  .form__inputs {
+    display: inline-block;
+    width: 49.3%;
+  }
+  .form__button {
+    width: 100%;
   }
   .content {
     -webkit-box-ordinal-group: 3;

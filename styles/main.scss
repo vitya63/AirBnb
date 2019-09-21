@@ -285,7 +285,22 @@ body {
   .form {
     order: 1;
     margin: 0 0 50px;
-    position: static;
+    padding: 0;
+    height: 100%;
+    top: 0;
+
+    .price {
+      margin-bottom: 5px;
+    }
+
+    &__inputs {
+      display: inline-block;
+      width: 49.3%;
+    }
+
+    &__button {
+      width: 100%;
+    }
   }
 
   .content {
