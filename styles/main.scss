@@ -52,11 +52,12 @@ body {
 
 .main {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
 .form {
+  position: sticky;
+  top: 30px;
   height: 330px;
   width: 319px;
   padding: 30px 30px 38px;
@@ -89,6 +90,7 @@ body {
 
   &__button {
     background: #fd5c63;
+    cursor: pointer;
     border-radius: 4px;
     height: 50px;
     width: 270px;
@@ -225,6 +227,7 @@ body {
       box-sizing: border-box;
       border-radius: 4px;
       font-size: 16px;
+      cursor: pointer;
       line-height: 22px;
       color: #118488;
       height: 50px;
@@ -273,8 +276,19 @@ body {
   }
 }
 
-@media screen and (max-width: 906px) {
+@media screen and (max-width: 699px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .form {
-    margin-left: 0;
+    order: 1;
+    margin: 0 0 50px;
+    position: static;
+  }
+
+  .content {
+    order: 2;
   }
 }
